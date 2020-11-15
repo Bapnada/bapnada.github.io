@@ -1,0 +1,731 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>Archive</title>
+  <link href="http://fonts.googleapis.com/css?family=Bree Serif|Roboto&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <style>
+@media only screen and (max-width: 40em) {
+    div.wrapper {
+        width: 90%;
+    }
+    div.post {
+        margin-top: 150px;
+    }
+    div.tags {
+        display: none;
+    }
+    div.menu li {
+        display: block;
+        margin: 5px 0px;
+        padding: 10px 0px;
+        text-align: center;
+        background-color: #427ea3;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+    }
+    div.menu li:hover {
+        background-color: #529ecc;
+    }
+    div.menu li:active {
+        background-color: #888888;
+    }
+    div.menu .search {
+        display: none;
+    }
+    div.menu a:link {
+        color: #f6f6f6;
+        text-decoration: none;
+    }
+    div.menu a:visited {
+        color: #f6f6f6;
+        text-decoration: none;
+    }
+    div.menu a:hover {
+        color: #f6f6f6;
+        text-decoration: none;
+    }
+    p.buttons_hidden {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        float: left;
+    }
+    div.social {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+    }
+    div.like {
+        float: left;
+    }
+    div.fb-like {
+        float: left;
+        padding: 0 20px 0 0;
+    }
+}
+body {
+    background-color: #f6f6f6;
+    color: #555;
+    font-family: 'Roboto';
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    margin: 0px;
+}
+::selection {
+    background: #529ecc;
+    color: #fff;
+}
+a:link, a:visited {
+    color: #427ea3;
+    text-decoration: none;
+}
+a:hover {
+    color: #529ecc;
+    text-decoration: none;
+}
+* {
+    -moz-transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+*:hover {
+    -moz-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.wrapper {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 60px auto 60px;
+    height: auto;
+}
+header {
+    margin: 30px 0px 120px;
+}
+h1 {
+    font-family: 'Bree Serif';
+    font-size: 30px;
+    margin: 0px;
+    font-weight: normal;
+    color: #427ea3;
+}
+h2 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+    color: #555;
+}
+hr {
+    background: #888888;
+    height: 1px;
+    border: 0;
+    margin-top: 20px;
+}
+.post {
+    margin-top: 100px;
+}
+.post h1 {
+    font-size: 35px;
+    font-family: 'Bree Serif';
+    color: #427ea3;
+    padding-top: 20px;
+}
+.post h2 {
+    font-size: 25px;
+    font-family: 'Bree Serif';
+    color: #427ea3;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.title {
+    font-family: 'Bree Serif';
+    font-size: 50px;
+    margin: 5px 0 5px;
+    color: #427ea3;
+}
+.date {
+    margin-top: 0px;
+}
+.reblogged {
+    margin-bottom: -5px;
+}
+.reblogged a:link {
+    color: #888888;
+    text-decoration: none;
+}
+.reblogged a:visited {
+    color: #888888;
+    text-decoration: none;
+}
+.reblogged a:hover {
+    color: #529ecc;
+}
+.dateandreblogged {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+.caption {
+    margin: 10px 0px;
+    line-height: 25px;
+    text-align: left;
+    font-size: 18px;
+    color: #555;
+}
+.text {
+    margin: 10px 0px;
+    line-height: 25px;
+    text-align: left;
+    color: #555;
+    font-size: 18px;
+}
+.text p:first-child {
+    font-size: 25px;
+    font-family: 'Roboto';
+    color: #333;
+}
+.text img {
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+blackquote {
+    color: #427ea3;
+    border-left: 3px solid #427ea3;
+}
+.photo img {
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+}
+.photoset {
+    position: relative;
+    width: 100%;
+}
+.quote {
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Bree Serif';
+    color: #333;
+    text-align: center;
+}
+.invertedcommas {
+    font-size: 45px;
+    margin: 0px;
+    color: #427ea3;
+}
+.link {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: block;
+    background-color: #427ea3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    color: #f6f6f6;
+    font-size: 16px;
+    text-align: center;
+}
+.link:hover {
+    background-color: #529ecc;
+}
+.link:active {
+    background-color: #888888;
+}
+.link a {
+    font-size: 40px;
+    margin: 0px;
+    font-family: 'Bree Serif';
+}
+.link a:link {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.link a:visited {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.link a:hover {
+    color: #f6f6f6;
+    text-decoration: underline;
+}
+.link p {
+    margin: 0px;
+}
+.chat {
+    font-size: 20px;
+    text-align: left;
+    color: #555;
+}
+.chat ul {
+    margin: 50px 0px;
+    padding: 0px;
+}
+.chat li {
+    list-style-type: none;
+    margin: 0px 0px 5px 0px;
+    padding: 15px 0px;
+    border-top-style: none;
+    border-bottom-style: dotted;
+    border-right-style: none;
+    border-left-style: none;
+    border-width: 1px;
+    border-color: #888888;
+}
+.chat li:first-child {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-right-style: none;
+    border-left-style: none;
+    border-width: 1px;
+    border-color: #888888;
+}
+.label {
+    color: #333;
+    font-weight: bold;
+}
+.asker {
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-bottom: -20px;
+}
+.question {
+    font-size: 30px;
+    font-family: 'Bree Serif';
+    color: #427ea3;
+    margin-bottom: 0px;
+}
+.audio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    text-align: center;
+    margin: 0px auto;
+    width: auto;
+}
+.tmblr-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    text-align: center;
+    margin: 30px auto;
+    width: auto;
+}
+.tmblr-embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.audio {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    text-align: center;
+    margin: 0px auto;
+    width: auto;
+}
+.buttons {
+    font-size: 12px;
+    margin-top: 30px;
+    color: #888888;
+    height: 30px;
+    width: 100%;
+}
+.buttons a:link {
+    color: #888888;
+    text-decoration: none;
+}
+.buttons a:visited {
+    color: #888888;
+    text-decoration: none;
+}
+.buttons a:hover {
+    color: #529ecc;
+}
+.buttons a {
+    margin-right: 10px;
+}
+
+
+.buttons_hidden {
+    display: inline;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+article:hover .buttons_hidden {
+    display: inline;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+.social {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+article:hover .social {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.social {
+    width: auto;
+    float: right;
+    margin-right: 0px;
+}
+.reblog {
+    float: left;
+    width: 20px;
+    margin-right: 20px;
+}
+.like {
+    float: right;
+    width: 20px;
+}
+.menu {
+    display: inline;
+    margin: 0px;
+    font-size: 16px;
+}
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+.menu li {
+    list-style-type: none;
+    display: inline;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+}
+.menu form {
+    display: inline;
+    float: right;
+}
+.menu a:link {
+    color: #888888;
+    text-decoration: none;
+}
+.menu a:visited {
+    color: #888888;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #529ecc;
+}
+.search:hover .input {
+    width: 150px;
+    padding: 3px;
+    border: 1px solid #888888;
+    margin-left: 5px;
+}
+.input {
+    padding: 3px 0px;
+    margin-top: -3px;
+    width: 0px;
+    border: 0px;
+    background-color: #f6f6f6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.menu img {
+    float: right;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+.nextprev {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 0px auto;
+}
+.nextprev a {
+    color: #f6f6f6;
+}
+.previous {
+    float: left;
+    display: block;
+    padding: 10px;
+    background-color: #427ea3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.next {
+    float: right;
+    display: block;
+    padding: 10px;
+    background-color: #427ea3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.previous:hover {
+    background-color: #529ecc;
+}
+.next:hover {
+    background-color: #529ecc;
+}
+.previous:active {
+    background-color: #888888;
+}
+.next:active {
+    background-color: #888888;
+}
+.space {
+    height: 30px;
+}
+.space_menu {
+    height: 70px;
+}
+.tags {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.tags li {
+    display: inline;
+    width: 20px;
+    padding: 3px 6px;
+    margin-right: 10px;
+    list-style: none;
+    background: #427ea3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.tags li:hover {
+    background: #529ecc;
+}
+.tags a:link {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.tags a:visited {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.tags a:hover {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.tags a {
+    margin-right: 0px;
+}
+.fb-like {
+    float: right;
+    margin: -5px 0px 0px 0px;
+    padding: 0 0 0 20px;
+}
+.avatar {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.avatar img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+img.notes {
+    height: 16px;
+    width: 16px;
+}
+img.note {
+    height: 16px;
+    width: 16px;
+}
+ol.notes {
+    padding: 0px;
+    font-size: 14px;
+    margin: 25px 0px;
+    list-style-type: none;
+    border-bottom: solid 1px #ccc;
+}
+ol.notes li.note {
+    border-top: solid 1px #ccc;
+    padding: 10px;
+    display: inline;
+    width: 100%;
+}
+ol.notes li.note img.avatar {
+    vertical-align: -4px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+ol.notes li.note span.action {
+    font-weight: normal;
+}
+ol.notes li.note .answer_content {
+    font-weight: normal;
+}
+ol.notes li.note blockquote {
+    border-color: #eee;
+    padding: 4px 10px;
+    margin: 10px 0px 0px 25px;
+}
+ol.notes li.note blockquote a {
+    text-decoration: none;
+}
+.sad {
+    font-size: 50px;
+    color: #427ea3;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #888888;
+    font-size: 15px;
+    margin-top: 100px;
+}
+.footer img {
+    margin: 30px auto 15px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<article>
+<div class="post">
+
+
+
+    
+    <p class="title"><a href="https://simpletext-theme.tumblr.com/post/92431284593/duis-autem-iriure">Duis autem iriure</a></p>
+    
+
+    
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy magna aliquam erat volutpat.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&nbsp;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.&nbsp;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</body></html>
